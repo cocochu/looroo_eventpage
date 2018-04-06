@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>looroo modal</title>
+    <style>
+    .modal-header{padding: 10px;}
+    .modal-header .modal-title{position: relative; width:580px; height: 480px; text-align: middle; padding: 20px 0;}
+    .modal-header .modal-title .modal-click{position: absolute; top: 450px; left:380px; width: 200px; height: 40px; background-color: pink;}
+    .modal-header .modal-title .modal-click .btn{width: 40px; height: 40px; margin: 0 10px;}
+    .modal-body{width: 100%;height: 400px;}
+    .modal-body .title{font-size: 16px; margin: 15px 0;}
+    .modal-body .formBox{width: 100%; height: 50px;}
+    .modal-body .thum{float: left;width: 45px; height: 45px; border-radius: 22.5px; border: 1px solid #000;margin-left: 40px;}
+    .modal-body #textLine{width: 350px; height:40px; border-radius: 20px; border: 1px solid #000;}
+    .modal-body .btn_vote{float: right; width: 40px; height: 40px; margin-right: 40px;}
+    .modal-body #textLine_1{float: left; width: 350px; height:40px; border-radius: 20px; border: 1px solid #000; margin-left: 25px;}
+    .modal-footer{width: 100%; height: 50px;text-align: center; padding: 10px 0;}
+   
+    </style>
+</head>
+<body>
+   
+<div class="modal-header">
+  <h4 class="modal-title">
+  <embed src="http://www.youtube.com/v/Z5QZVxqFV3I?version=3&vq=highres" type="application/x-shockwave-flash" width="580" height="480" allowscriptaccess="always" allowfullscreen="true" allowscriptaccess="never"> <!--모달 썸네일 사이즈가 계속 깨져서 이 사이즈로 했습니다 ㅠㅠ.-->
+  <div class="modal-click">
+      <p class="btn click1"><img src="images/like.png" alt="투표수하트"></p>
+      <p class="btn click2"><img src="images/star.png" alt="투표수별"></p>
+      <p class="btn click3"><img src="images/like.png" alt="투표수"></p> <!--click하면 바꾸기 및 숫자 올라가기?? mouseover로 js에서 써주면 되는거 아닌가요? 근데 그러면 숫자를 html에서 어떤 식으로 구현을 해야 하는지 이해가 안되요...-->
+  </div>
+  </h4>
+</div>
+
+<div class="modal-body">
+  <form action="#" method="post">
+    <fieldset>
+       <div class="formBox">
+        <legend class="title">댓글</legend>
+        <label for="thum" class="thum"></label>
+        <label for="text"><input type="text" id="textLine" placeholder="와. 노래좋다! 투표투표"></label>
+        <button type="submit" class="btn_vote">저장</button>
+        </div>
+    </fieldset>
+  </form>
+  <div class="formbox">
+    <p class="thum"></p>
+    <p id="textLine_1"></p>
+    </div>
+</div>
+
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+</div>
+</body>
+</html>

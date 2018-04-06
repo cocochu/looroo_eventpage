@@ -1,0 +1,87 @@
+@charset "utf-8";  
+/*초기화*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button
+{margin:0; padding:0}
+ul,ol,dl,li{ list-style:none;}
+fieldset, a img{ border:0 none;}
+table{ border-collapse:collapse;}
+input,select,textarea,button{vertical-align: middle;}
+
+/*문서의 기본링크스타일*/
+a{text-decoration:none; color: black;} 
+
+/*문서전체의 기본 폰트스타일*/
+body{font-size:14px;line-height:1.5;
+font-family:Arial, Helvetica, sans-serif,'나눔고딕',dotum,'돋움',sans-serif;
+color:#333;}
+body{overflow-x:hidden;}
+   
+/*공통요소*/
+.layout {width: 820px; margin: 0 auto;}
+.ir{display: block;text-indent: -9999px;}
+
+/*전체 wrap*/
+#wrap{width: 820px; height: auto; margin: auto; background-color: #fff;}
+  
+ /*header*/
+#header{padding: 20px 10px 0 0;}
+#header .layout {width:100%; height: 60px; zoom:1;} /*header 레이아웃 820px 형태 유지, zoom:1 해야 익스에도 안 깨짐*/
+#header .layout:after {clear: both; content: ''; display: block;}
+#header .logo {float: left;  width: 150px; height: 45px; margin-left: 90px;}
+/*로고 사이즈 , 왼쪽으로 배치*/
+#header .logo>a {width: 100%; height: 100%; display:block; background: url(../images/looroo_logo.png);}
+/*로고 사이즈 , 왼쪽으로 배치*/
+#header .wrap_icon {float: right; width: 160px; height: 40px; margin-right: 90px; zoom:1;}
+/*전체 아이콘 사이즈, 익스에서 안 깨지도록*/
+#header .wrap_icon:after {content: ''; display: block; clear: both;}
+/*float줘서*/
+#header .wrap_icon .icon {width: 40px; height: 40px; float: left; margin-right: 20px;}
+#header .wrap_icon .facebook{background: url(../images/facebook.png);}
+#header .wrap_icon .youtube {background: url(../images/youtube.png);}
+#header .wrap_icon .instagram {background: url(../images/instagram.png); margin-right: 0;}
+
+/*container*/
+#container{width: 820px;}
+
+/*.section1-이미지,대표동영상*/
+.section1 .layout{width: 100%; height: 800px; background-color: lightpink;}
+.section1 .layout .banner{width: 100%; height:400px;}
+.section1 .layout .banner .banner_img{width: 100%; height: 400px;}
+.section1 .layout .banner .banner_txt{width: 100%; height: 100px; background-color: deeppink; font-size: 20px; text-align: center;}
+.section1 .layout .banner .banner_video{width:100%; height: 300px; padding: 60px 0;} 
+.section1 .layout .banner .banner_video #first_video{position: relative; width: 320px; height: 180px; margin: auto;}
+/*.section1-버튼*/
+.section1 .layout .banner .banner_video #first_video #popbutton{position: absolute; top: 80px; left: 130px; width: 36px; height: 36px; background-image: url(../images/play_button.png);}
+/*모달 가운데에서 열리자*/
+.modal{text-align: center;}
+
+
+
+/*.section2-동영상슬라이더1*/
+.section2 .layout{width: 100%; height: 500px; background-color: green;}
+
+/*.section3-동영상슬라이더2*/
+.section3 .layout{width: 100%; height: 500px; background-color: rebeccapurple;}
+
+/*.section4-동영상슬라이더3*/
+.section4 .layout{width: 100%; height: 500px; background-color: crimson;}
+
+/*.section5-댓글*/
+.section5 .layout{width: 100%; height: 500px;}
+.section5 .layout .comment{height: 30px;}
+.section5 .layout .comment .comment_title{height: 20px; padding: 5px 20px;}
+.section5 .layout .comment .comment_title p{font-weight: bold; font-size: 16px;}
+/*.section5-댓글 form*/
+.section5 .layout .comment .comment_section{width:700px; height: 440px; margin: 0 60px;}
+.section5 .layout .comment .comment_section .comment_submit{width:660px; height: 50px; margin: auto;}
+.section5 .layout .comment .comment_section .comment_submit .thum{float: left; width: 40px; height: 40px; border-radius: 20px; border: 1px solid black; margin: 0 10px; background-image: url(../images/thum1.png);}
+.section5 .layout .comment .comment_section .comment_submit #textLine{width: 505px; height: 35px; border-radius: 20px; border: 1px solid pink; margin-left: 10px;}
+.section5 .layout .comment .comment_section .comment_submit .btn{ float: right; width: 50px; height: 35px; border-radius: 10px; font-weight: 100;
+  border-color: transparent; font-size: 14px; background: hotpink; color: #fff; cursor: pointer; margin: 0 10px;}
+/*.section5-댓글완료*/
+.section5 .layout .comment .comment_section .comment_line{width: 660px; height: 50px; margin: auto;}
+.section5 .layout .comment .comment_section .comment_line .thum{float: left; width: 40px; height: 40px; border-radius: 20px; border: 1px solid black; margin:  0 10px;}
+.section5 .layout .comment .comment_section .comment_line .text_view{float: left; width: 505px; height: 35px; border-radius: 20px; border: 1px solid pink; margin: 0 10px;}
+
+/*footer*/
+#footer .layout{width: 100%; height: 180px; background-color: yellow; opacity: 0.3;}
